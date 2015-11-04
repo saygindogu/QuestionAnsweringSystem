@@ -1,0 +1,247 @@
+body {
+  font-size: 62.5%;
+ 
+  /* Remove margins and padding around content */
+  margin: 0;
+  padding: 0;
+ 
+  /* Fix background during scrolling */
+  background-attachment: fixed;
+}
+
+body#home,
+body.page{
+	/* Create a gradient background */
+  background-image: -webkit-linear-gradient( top, #000, gray);
+  background-image: -moz-linear-gradient( top, #000, gray);
+  background-image: -ms-linear-gradient( top, #000, gray);
+  background-image: -o-linear-gradient( top, #000, gray);
+  background-image: linear-gradient( top, #000, gray);
+}
+ 
+/* Remove default margin and padding from every element */
+* {
+  margin: 0;
+  padding: 0;
+ 
+/* Includes padding, margins with width and height of elements */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-size: 1.6em;
+  padding: 20px;
+  margin: 0 auto;
+  width: 900px;
+  height: 2000px;
+  background-color: #FFF;
+ 
+  /* Place nonrepeating background */
+  background-image: url("corner-img.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+ 
+  /* Transparent background */
+  opacity: 0.8;
+}
+/*- See more at: http://www.newthinktank.com/2015/05/css-problems-solved/#sthash.aSQ4ocnj.dpuf*/
+
+iframe{
+	text-align : left-side;
+	margin: 0 auto;
+	width: 800px;
+	height: 900px;
+	overflow: auto;
+}
+
+div {
+	text-align : center;
+    margin: 0 auto;
+
+}
+
+header{
+	overflow: auto;
+	background-color:#778899;
+	text-align:center;
+	height:85px;
+	font-size:1.6em;
+}
+
+.buttons{
+	text-align : center;
+	padding-right: 30px;
+	padding-top: 10px;
+    padding-bottom: 25px;
+	background-color:#778899;
+}
+
+.error{
+	background-color: #72F2F2;
+	font-weight : bold;
+	color : red;
+	font-size:200%;
+}
+.succes{
+	background-color: #AAF0DE;
+	font-weight : bold;
+	color : green;
+	font-size:200%;
+}
+
+button{
+	border: solid 4px #aaa;
+	border-radius: 7px;
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   color:#fff;
+   text-decoration: none;
+   font-weight: bold;
+   display: inline-block;
+   cursor:pointer;
+}
+
+
+button.topbutton{ 
+   background-color: #E6E6FA;
+   font-size: 1.6em;
+   margin: 15px 15px 5px 5px;
+   padding: 5px;
+   width: auto;
+    color:#fff;
+
+}
+
+div{
+	font-size: 1.0em;
+}
+
+button.button1{
+   background-color: #bc8f8f;  
+   font-size: 1.2em;
+   margin: 3px 3px 3px 3px;
+   padding: 5px;
+
+}
+
+button.title{	
+   background-color: #668baf;
+   color: #000;
+   font-size: 1em;
+   margin: 10px 10px 5px 5px;
+   padding: 1px;
+}
+.title:hover { background-color: #76abff; }
+.button1:hover { background-color: #deb887; }
+.topbutton:hover { background-color: #98fb98; }
+ 
+table {
+  text-align : center;
+   margin: 0 auto;
+  border: 1px solid #000;
+  /* Eliminate space between cells */
+  border-collapse: collapse;
+  background-color: #778899;
+}
+
+.questions,
+.categories,
+.tags,
+.users{
+	background-color: #ffe4e1;
+	width: 100%;
+}
+ 
+/* Style table columns */
+table.questions td,
+table.questions tr,
+table.categories td,
+table.categories tr,
+table.tags td,
+table.tags tr,
+table.users td,
+table.users tr,
+{
+	text-align: center;
+	padding: 0.3em;
+	width:100%;
+	background-color: #ffe4e1;
+}
+
+ 
+/* Style table headings */
+table th {
+  font-weight: bold;
+  padding: 0.3em;
+  background-color: #e0ffff;
+}
+ 
+.questions tr:nth-child(3n), 
+.categories tr:nth-child(3n),
+.users tr:nth-child(3n)
+{
+   border-bottom: 1px solid #000;
+}
+
+.tags tr:nth-child(4n)
+{
+   border-bottom: 1px solid #000;
+}
+
+a.link1
+{
+   border: solid 0.5em #aaa;
+   border-radius: 0.7em;
+   -moz-border-radius: 0.7em;
+   -webkit-border-radius: 0.7em;
+   background-color: #9370db;
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 15px, 15px, 5px, 5px;
+   padding: 5px;
+   display: inline-block;
+}
+
+a.link1:hover { background-color: #daa520; }
+
+div.text{
+	text-align:left;
+}
+
+div.comment,
+div.answer,
+div.question{
+	border: solid 0.5em #aaa;
+   border-radius: 0.7em;
+   -moz-border-radius: 0.7em;
+   -webkit-border-radius: 0.7em;
+   text-align : left;
+   padding: 6px;
+}
+div.question{
+	
+	background-color: #ffe4b5;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+
+div.answer{
+	background-color: #afeeee;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+div.comment{
+	background-color: #b0c4de;
+	width: 50%;
+	margin-top: 3px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
